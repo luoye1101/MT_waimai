@@ -13,9 +13,11 @@
 		677145AB1D88276B0048878F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677145A91D88276B0048878F /* Main.storyboard */; };
 		677145AD1D88276B0048878F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677145AC1D88276B0048878F /* Assets.xcassets */; };
 		677145B01D88276B0048878F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677145AE1D88276B0048878F /* LaunchScreen.storyboard */; };
+		C7E7A56771B1949D6E1059AA /* libPods-MT_waimai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC04963F37480802A69D6434 /* libPods-MT_waimai.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		327932BA2DBBC5361CCBAD98 /* Pods-MT_waimai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MT_waimai.release.xcconfig"; path = "Pods/Target Support Files/Pods-MT_waimai/Pods-MT_waimai.release.xcconfig"; sourceTree = "<group>"; };
 		6771459D1D88276B0048878F /* MT_waimai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT_waimai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677145A11D88276B0048878F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		677145A31D88276B0048878F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		677145AC1D88276B0048878F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		677145AF1D88276B0048878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		677145B11D88276B0048878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC04963F37480802A69D6434 /* libPods-MT_waimai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MT_waimai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE223EF023F7414C1290E6C3 /* Pods-MT_waimai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MT_waimai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MT_waimai/Pods-MT_waimai.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E7A56771B1949D6E1059AA /* libPods-MT_waimai.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F1199642E279F6053D9C728 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE223EF023F7414C1290E6C3 /* Pods-MT_waimai.debug.xcconfig */,
+				327932BA2DBBC5361CCBAD98 /* Pods-MT_waimai.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		677145941D88276B0048878F = {
 			isa = PBXGroup;
 			children = (
 				6771459F1D88276B0048878F /* MT_waimai */,
 				6771459E1D88276B0048878F /* Products */,
+				5F1199642E279F6053D9C728 /* Pods */,
+				E81320545F386BDCD0CC222C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E81320545F386BDCD0CC222C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC04963F37480802A69D6434 /* libPods-MT_waimai.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 677145B41D88276B0048878F /* Build configuration list for PBXNativeTarget "MT_waimai" */;
 			buildPhases = (
+				58D137DD2467B9944C0B236B /* [CP] Check Pods Manifest.lock */,
 				677145991D88276B0048878F /* Sources */,
 				6771459A1D88276B0048878F /* Frameworks */,
 				6771459B1D88276B0048878F /* Resources */,
+				808B97798C4D8159503A468E /* [CP] Embed Pods Frameworks */,
+				586D84252C4EE7B23B9C8457 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		586D84252C4EE7B23B9C8457 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MT_waimai/Pods-MT_waimai-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58D137DD2467B9944C0B236B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		808B97798C4D8159503A468E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MT_waimai/Pods-MT_waimai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		677145991D88276B0048878F /* Sources */ = {
@@ -261,8 +336,10 @@
 		};
 		677145B51D88276B0048878F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE223EF023F7414C1290E6C3 /* Pods-MT_waimai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = MT_waimai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.MT-waimai";
@@ -272,8 +349,10 @@
 		};
 		677145B61D88276B0048878F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327932BA2DBBC5361CCBAD98 /* Pods-MT_waimai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = MT_waimai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.MT-waimai";
@@ -300,6 +379,7 @@
 				677145B61D88276B0048878F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
